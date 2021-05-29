@@ -8665,6 +8665,22 @@ Devmfm:set(mustafa..'DelManagerRep'..msg.chat_id_..'',text)
 return false
 end
 end
+--     Source Tokyo     --
+if text == "غنيلي" and ChCheck(msg) then
+data,res = https.request('https://apiabs.ml/Audios.php')
+if res == 200 then
+Audios = json:decode(data)
+if Audios.Info == true then
+local Text ='✘∫تم اختيار المقطع الصوتي لك'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '✘ Tokyo TeAM .',url="t.me/TOKYO_TEAM"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
+end
 if text == 'حذف رد عام' and SecondSudo(msg) or text == '⏎ حذف رد عام ✘' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
 Devmfm:set(mustafa.."mfm:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
 Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ حسنا ارسل الكلمه لحذفها " ,  1, "md")
