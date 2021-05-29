@@ -2699,7 +2699,7 @@ end
 if text == "الرابط" then
 if not Devmfm:get(mustafa.."mfm:Lock:GpLinks"..msg.chat_id_) then 
 if Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_) then
-Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ 𝐆𝐑𝐎𝐔𝐏 𝑳𝐈𝐍𝐊 ↬ ⥡ \n┉┉┉┉ EB ┉┉┉┉\n"..Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 ↬ ⥡ \n┉┉┉┉ EB ┉┉┉┉\n"..Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_), 1, "html")
 else 
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ لايوجد رابط ارسل ⏎ ضع رابط او ارسل ⏎ انشاء رابط للانشاء', 1, 'md')
 end
@@ -3561,7 +3561,7 @@ local text =  [[
     
 ✘ ∫ [𝙴𝚂𝙲𝙾𝙱𝙰𝚁 𝚂𝙾𝚄𝚁𝙲𝙴](https://t.me/TEAM_Escobar)
 
-✘ ------- 𝙴𝚂𝙲𝙾𝙱𝙰𝚁 ------- ✘
+    ✘ ------- 𝙴𝚂𝙲𝙾𝙱𝙰𝚁 ------- ✘
 ✘ ∫ [ɪʙʀᴀʜɪᴍ](https://t.me/F16_ibra)
 ✘ ∫ [ᴍụѕᴛᴀғᴀ](https://t.me/MFMVIP)
 
