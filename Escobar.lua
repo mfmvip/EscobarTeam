@@ -8670,7 +8670,7 @@ Devmfm:set(mustafa..'DelManagerRep'..msg.chat_id_..'',text)
 return false
 end
 end
---     Source Tokyo     --
+--     Source Escobar     --
 if text == "غنيلي" and ChCheck(msg) then
 data,res = https.request('https://apiabs.ml/Audios.php')
 if res == 200 then
@@ -8679,7 +8679,7 @@ if Audios.Info == true then
 local Text ='✘∫تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✘ Tokyo TeAM .',url="t.me/TOKYO_TEAM"}},
+{{text = '✘ Escobar .',url="t.me/TEAM_Escobar"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
