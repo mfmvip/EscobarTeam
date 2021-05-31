@@ -2135,7 +2135,7 @@ if Devmfm:get(mustafa.."mfm:Lock:Welcome"..msg.chat_id_) then
 if Devmfm:get(mustafa..'mfm:Groups:Welcomes'..msg.chat_id_) then
 text = Devmfm:get(mustafa..'mfm:Groups:Welcomes'..msg.chat_id_)
 else
-text = '• نورت حبي \n• [firstname lastname] \n• [@username]'
+text = '•  وففـہ حـاتہ تعـبوسككہ 🍇🕷️ \n• [firstname lastname] \n• [@username]'
 end
 local text = text:gsub('firstname',(msg.content_.members_[0].first_name_ or ''))
 local text = text:gsub('lastname',(msg.content_.members_[0].last_name_ or ''))
