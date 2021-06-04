@@ -3623,7 +3623,7 @@ end
 if Admin(msg) then
 if text == "تاك للكل" and ChCheck(msg) then
 function TagAll(dp1,dp2)
-local text = "✘ ∫ وينكم يالربع \n┉┉┉┉ EB ┉┉┉┉\n"
+local text = "✘ ∫ وꫂيٰنڪــٓم يٰآلٍࢪبـــٓ؏ \n┉┉┉┉ EB ┉┉┉┉\n"
 i = 0
 for k, v in pairs(dp2.members_) do
 i = i + 1
