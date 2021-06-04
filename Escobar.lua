@@ -847,7 +847,7 @@ Devmfm:srem(mustafa..'mfm:Admins:'..data.chat_id_,data.sender_user_id_)
 Devmfm:srem(mustafa..'mfm:VipMem:'..data.chat_id_,data.sender_user_id_)
 Devmfm:srem(mustafa..'mfm:Cleaner:'..data.chat_id_,data.sender_user_id_)
 Devmfm:srem(mustafa..'User:Donky:'..data.chat_id_,data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "✘ ∫ تــمِ تنزيلك من ⏎ ⥡\n~ ( "..constructor..''..Managers..''..admins..''..vipmem..''..cleaner..''..donky.."  ) ~ \n ⚠️🔰" ) 
+EditMsg(Chat_Id2, Msg_Id2, "✘ ∫  ⚠️🔰 تــمِ تنزيلك من ⏎ ⥡\n~ ( "..constructor..''..Managers..''..admins..''..vipmem..''..cleaner..''..donky.."  ) ~ \n " ) 
 else 
 if IdRank(data.sender_user_id_, data.chat_id_) == 'آلَعضــوُ' then
 EditMsg(Chat_Id2, Msg_Id2, "✘ ∫ ليس لديك رتبه في البوت") 
