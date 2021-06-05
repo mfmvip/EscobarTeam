@@ -8886,7 +8886,7 @@ if not Admin(msg) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ هذا الامر يخص الرتب الاعلى فقط\n✘ ∫ ارسل ⏎ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = Devmfm:get(mustafa..'mfm:Help1')
-local text =  [[
+local text =  [[*
 ✘ ∫ اوامر حماية آلَمـجـ̨مـۈعة ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ قفل • فتح ⏎ الروابط
@@ -8932,7 +8932,7 @@ local text =  [[
 ✘ ∫ البوتات بالطرد
 ✘ ∫ البوتات بالتقيد
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -8954,7 +8954,7 @@ if not Admin(msg) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ هذا الامر يخص الرتب الاعلى فقط\n✘ ∫ ارسل ⏎ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = Devmfm:get(mustafa..'mfm:Help2')
-local text =  [[
+local text =  [[*
 ✘ ∫ آلآوآمـࢪ آلآډمـنيهہ ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ الاعدادت
@@ -9007,7 +9007,7 @@ local text =  [[
 ✘ ∫ تقييد يوم + عدد الايام
 ✘ ∫ الغاء تقييد ⏎ لالغاء التقييد بالوقت
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9029,7 +9029,7 @@ if not Admin(msg) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ هذا الامر يخص الرتب الاعلى فقط\n✘ ∫ ارسل ⏎ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = Devmfm:get(mustafa..'mfm:Help3')
-local text =  [[
+local text =  [[*
 ✘ ∫ آلآوآمـࢪ آلمـډٍࢪآ۽ ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ فحص البوت
@@ -9068,7 +9068,7 @@ local text =  [[
 ✘ ∫ ردود المدير • ردود المطور
 ✘ ∫ ضافني • حساب العمر • الزخرفه
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9090,7 +9090,7 @@ if not Admin(msg) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ هذا الامر يخص الرتب الاعلى فقط\n✘ ∫ ارسل ⏎ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = Devmfm:get(mustafa..'mfm:Help4')
-local text =  [[
+local text =  [[*
 ✘ ∫ آلآوآمـࢪ آلمـنشـئيٰن ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ تنزيل الكل
@@ -9125,7 +9125,7 @@ local text =  [[
 ✘ ∫ المنشئين الاساسيين 
 ✘ ∫ حذف جميع الرتب
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9147,17 +9147,17 @@ if not SudoBot(msg) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ هذا الامر للمطورين فقط', 1, 'md')
 else
 local Help = Devmfm:get(mustafa..'mfm:Help5')
-local text =  [[
-✘ ∫ *آلآوآمـࢪ آلمـطوٍࢪين* ⏎ ⥡
+local text =  [[*
+✘ ∫ آلآوآمـࢪ آلمـطوٍࢪين ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ *الكروبات*
-✘ ∫ *المطورين*
-✘ ∫ *المشتركين*
-✘ ∫ *الاحصائيات*
-✘ ∫ *المجموعات*
-✘ ∫ *اسم البوت + غادر*
-✘ ∫ *اسم البوت + تعطيل*
-✘ ∫ *كشف + -ايدي آلَمـجـ̨مـۈعة*
+✘ ∫ الكروبات
+✘ ∫ المطورين
+✘ ∫ المشتركين
+✘ ∫ الاحصائيات
+✘ ∫ المجموعات
+✘ ∫ اسم البوت + غادر
+✘ ∫ اسم البوت + تعطيل
+✘ ∫ كشف + -ايدي آلَمـجـ̨مـۈعة
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ رفع • تنزيل ⏎ مدير عام
 ✘ ∫ حذف • المدراء العامين 
@@ -9209,7 +9209,7 @@ local text =  [[
 ✘ ∫ ترحيب البوت • المغادره
 ✘ ∫ البوت الخدمي • التواصل
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9228,7 +9228,7 @@ return false end
 end
 if text == "م٦" or text == "م6" or text == "اوامر6" or text == "اوامر٦" then
 local Help = Devmfm:get(mustafa..'mfm:Help6')
-local text =  [[
+local text =  [[*
 ✘ ∫ آلآوآمـࢪ آلآعـضآإ۽ ⏎ ⥡
 ┉┉┉┉ EB ┉┉┉┉
 ✘ ∫ السورس • موقعي • رتبتي • معلوماتي
@@ -9255,7 +9255,7 @@ local text =  [[
 ✘ ∫ ايدي • كشف  ⏎ بالرد • بالمعرف • بالايدي
 ✘ ∫ تحويل + بالرد ⏎ صوره • ملصق • صوت • بصمه
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
 ]]
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end
