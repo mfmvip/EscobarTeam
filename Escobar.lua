@@ -7869,7 +7869,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Mean:mfm'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apimfm.ml/Mean.php?mfm='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
 t = Mean.ok.mfm
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
