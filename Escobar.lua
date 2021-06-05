@@ -7655,6 +7655,18 @@ local txt = {string.match(text, "^(كول) (.*)$")}
 Dev_mfm(msg.chat_id_,0, 1, txt[2], 1, 'md')
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
+if text and text:match("^انطق (.*)$") then
+local UrlAntk = https.request('https://apiabs.ml/Antk.php?abs='..URL.escape(text:match("^انطق (.*)$")))
+Antk = JSON.decode(UrlAntk)
+if UrlAntk.ok ~= false then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '⌁ Escobar TeAM .',url="t.me/TEAM_Escobar"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendAudio?chat_id='..msg.chat_id_..'&audio='..URL.escape(Antk.result.link).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
 if Devmfm:get(mustafa..'mfm:setrules'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if text == 'الغاء' then 
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ تــمِ الغاء حفظ قوانين آلَمـجـ̨مـۈعة', 1, 'md')
@@ -7850,7 +7862,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Age:mfm'..msg.chat_id_) then
 if text and text:match("^احسب (.*)$") and ChCheck(msg) or text and text:match("^عمري (.*)$") and ChCheck(msg) then 
 local TextAge = text:match("^احسب (.*)$") or text:match("^عمري (.*)$") 
-UrlAge = https.request('https://apimfm.ml/age.php?age='..URL.escape(TextAge)) 
+UrlAge = https.request('https://apiabs.ml/age.php?age='..URL.escape(TextAge)) 
 Age = JSON.decode(UrlAge) 
 t = Age.ok.mfm
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
@@ -7869,7 +7881,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Mean:mfm'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiabs.ml/Mean.php?abs='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?Abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
 t = Mean.ok.mfm
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
