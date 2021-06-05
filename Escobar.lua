@@ -8863,8 +8863,8 @@ local text =  [[*
 ✘ ∫ م5 ⏎ اوامر المطورين
 ✘ ∫ م6 ⏎ اوامر الاعضاء
 ┉┉┉┉ EB ┉┉┉┉
-✘ ∫ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
-*]] 
+✘ ∫* [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙎𝘾𝙊𝘽𝘼𝙍](https://t.me/TEAM_Escobar)
+]] 
 Dev_mfm(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end
 end
