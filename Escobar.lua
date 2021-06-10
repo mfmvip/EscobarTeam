@@ -3479,7 +3479,7 @@ local cont = (tonumber(Devmfm:get(mustafa..'mfm:ContactNumber'..msg.chat_id_..':
 local user_nkt = tonumber(Devmfm:get(mustafa..'mfm:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)
 if result.username_ then username = '@'..result.username_ else username = 'لا يوجد' end
 if result.last_name_ then lastname = result.last_name_ else lastname = '' end
-Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ اسمك ⏎ ❨ ['..result.first_name_..'] ❩ 💝\n✘ ∫ معرفك ⏎ ❨ ['..username..'] ❩ 💝\n✘ ∫ ايديك ⏎ ❨ `'..result.id_..'` ❩ 💝\n✘ ∫ نقاطك ⏎ ❨ '..user_nkt..' ❩ 💝\n✘ ∫ رسائلك ⏎ ❨ '..user_msgs..' ❩ 💝\n✘ ∫ جهاتك ⏎ ❨ '..cont..' ❩ 💝\n✘ ∫ تفاعلك ⏎ '..formsgs(msguser)..' 💝\n✘ ∫ رتبتك ⏎ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ اسمك ⏎ ❨ ['..result.first_name_..'] ❩ 💝\n✘ ∫ معرفك ⏎ ❨ ['..username..'] ❩ 💝\n✘ ∫ ايديك ⏎ ❨ `'..result.id_..'` ❩ 💝\n✘ ∫ نقاطك ⏎ ❨ '..user_nkt..' ❩ 💝\n✘ ∫ رسائلك ⏎ ❨ '..user_msgs..' ❩ 💝\n✘ ∫ جهاتك ⏎ ❨ '..cont..' ❩ 💝\n✘ ∫ تفاعلك ⏎ '..formsgs(msguser)..' 💝\n✘ ∫ رتبتك ⏎ '..IdRank(msg.sender_user_id_, msg.chat_id_) 💝, 1, 'md')
 end
 getUser(msg.sender_user_id_,get_me)
 end
