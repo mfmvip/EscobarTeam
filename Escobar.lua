@@ -5893,10 +5893,10 @@ if data.first_name_ == false then
 Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ الحساب محذوف', 1, 'md')
 return false  end
 if data.username_ == false then
-Text = '✘ ∫ اسمه ⏎ ['..CatchName(data.first_name_,20)..'](tg://user?id='..result.sender_user_id_..')\n✘ ∫ ايديه ⏎ ❨ `'..result.sender_user_id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(result.sender_user_id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩'..Tked 
+Text = '✘ ∫ اسمه ⏎ ['..CatchName(data.first_name_,20)..'](tg://user?id='..result.sender_user_id_..')\n✘ ∫ ايديه ⏎ ❨ `'..result.sender_user_id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(result.sender_user_id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩ 💘'..Tked 
 SendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 else
-Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..result.sender_user_id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(result.sender_user_id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..result.sender_user_id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(result.sender_user_id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩ 💘'..Tked, 1, 'md')
 end
 end,nil)
 end 
@@ -5954,7 +5954,7 @@ end
 if data.first_name_ == false then
 Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ الحساب محذوف', 1, 'md')
 return false  end
-Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..res.id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(res.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..res.id_..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(res.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩ 💘'..Tked, 1, 'md')
 end,nil)
 end 
 end,nil)
@@ -6001,10 +6001,10 @@ if data.first_name_ == false then
 Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ الحساب محذوف', 1, 'md')
 return false  end
 if data.username_ == false then
-Text = '✘ ∫ اسمه ⏎ ['..CatchName(data.first_name_,20)..'](tg://user?id='..iduser..') 💘\n✘ ∫ ايديه ⏎ ❨ `'..iduser..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(data.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩'..Tked
+Text = '✘ ∫ اسمه ⏎ ['..CatchName(data.first_name_,20)..'](tg://user?id='..iduser..') 💘\n✘ ∫ ايديه ⏎ ❨ `'..iduser..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(data.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩ 💘'..Tked
 SendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 else
-Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..iduser..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(data.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ معرفه ⏎ [@'..data.username_..'] 💘\n✘ ∫ ايديه ⏎ ❨ `'..iduser..'` ❩ 💘\n✘ ∫ رتبته ⏎ '..IdRank(data.id_, msg.chat_id_)..''..sudobot..' 💘\n✘ ∫ رسائله ⏎ ❨ '..user_msgs..' ❩ 💘\n✘ ∫ تفاعله ⏎ '..formsgs(user_msgs)..''..CustomTitle..' 💘\n✘ ∫ نقاطه ⏎ ❨ '..user_nkt..' ❩ 💘'..Tked, 1, 'md')
 end
 end,nil)
 return false 
