@@ -6216,12 +6216,12 @@ return "mustafaTEAM"
 end
 if text and Manager(msg) and Devmfm:get("mustafa:New:id:"..mustafa..msg.chat_id_..msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ تــمِ الغاء حفظ كليشة الايدي', 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ تــمِ الغاء حفظ كليشة الايدي*', 1, 'md')
 Devmfm:del("mustafa:New:id:"..mustafa..msg.chat_id_..msg.sender_user_id_)
 return false
 end
 Devmfm:del("mustafa:New:id:"..mustafa..msg.chat_id_..msg.sender_user_id_)
-Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ تــمِ حفظ الكليشه الجديده', 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ تــمِ حفظ الكليشه الجديده*', 1, 'md')
 Devmfm:set(mustafa.."mfm:GpIds:Text"..msg.chat_id_,text)
 return false
 end
@@ -6326,7 +6326,7 @@ Dev_mfm(msg.chat_id_, msg.id_, 1, new_id, 1, 'html')
 end
 end
 else
-Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ عــــــــذرآ الايدي مـعـطل ', 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ عــــــــذرآ الايدي مـعـطل* ', 1, 'md')
 end
 else
 if Devmfm:get(mustafa.."mfm:AllIds:Text") then
@@ -6345,13 +6345,13 @@ notpicid = notpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 notpicid = notpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 notpicid = notpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-notpicid = "*✘ ∫ لا آسۧتطيٰع عـࢪض صوٍࢪتڪ لآنڪ قمـت بحـضٍࢪ آلبوت آو آنڪ لآ تمـتلڪ صوٍࢪه فيٰ بٍࢪوفآيٰلڪ *\n┉┉┉┉ EB ┉┉┉┉\n*✘ ∫ مـعـٍࢪفڪ ⏎ * ❨ "..username.." ❩ 💘\n*✘ ∫ آيٰډيڪ ⏎ * ❨ "..msg.sender_user_id_.." ❩ 💘\n*✘ ∫ ٍࢪتبتڪ ⏎ * "..IdRank(msg.sender_user_id_, msg.chat_id_).." 💘\n*✘ ∫ ٍࢪسۧآئلڪ ⏎ * ❨ "..user_msgs.." ❩ 💘\n*✘ ∫ سحـڪآتڪ ⏎ * ❨ "..edit_msg.." ❩ 💘\n*✘ ∫ تفـآعــلڪ ⏎ * "..formsgs(msguser).." 💘\n*✘ ∫ نقآطڪ ⏎ * ❨ "..user_nkt.." ❩ 💘\n┉┉┉┉ EB ┉┉┉┉\n"
+notpicid = "✘ ∫ لا آسۧتطيٰع عـࢪض صوٍࢪتڪ لآنڪ قمـت بحـضٍࢪ آلبوت آو آنڪ لآ تمـتلڪ صوٍࢪه فيٰ بٍࢪوفآيٰلڪ \n┉┉┉┉ EB ┉┉┉┉\n✘ ∫ مـعـٍࢪفڪ ⏎  ❨ "..username.." ❩ 💘\n✘ ∫ آيٰډيڪ ⏎  ❨ "..msg.sender_user_id_.." ❩ 💘\n✘ ∫ ٍࢪتبتڪ ⏎  "..IdRank(msg.sender_user_id_, msg.chat_id_).." 💘\n✘ ∫ ٍࢪسۧآئلڪ ⏎  ❨ "..user_msgs.." ❩ 💘\n✘ ∫ سحـڪآتڪ ⏎  ❨ "..edit_msg.." ❩ 💘\n✘ ∫ تفـآعــلڪ ⏎  "..formsgs(msguser).." 💘\n✘ ∫ نقآطڪ ⏎  ❨ "..user_nkt.." ❩ 💘\n┉┉┉┉ EB ┉┉┉┉\n"
 end 
 if not Devmfm:get(mustafa..'mfm:Lock:Id'..msg.chat_id_) then
 if not Devmfm:get(mustafa..'mfm:Lock:Id:Photo'..msg.chat_id_) then
 Dev_mfm(msg.chat_id_, msg.id_, 1, notpicid, 1, 'html')
 else
-Dev_mfm(msg.chat_id_, msg.id_, 1, "*✘ ∫ مـعـٍࢪفڪ ⏎ * ❨ "..username.." ❩ 💘\n*✘ ∫ آيٰډيڪ ⏎ * ❨ "..msg.sender_user_id_.." ❩ 💘\n*✘ ∫ ٍࢪتبتڪ ⏎ * "..IdRank(msg.sender_user_id_, msg.chat_id_).." 💘\n*✘ ∫ ٍࢪسۧآئلڪ ⏎ * ❨ "..user_msgs.." ❩ 💘\n*✘ ∫ سحـڪآتڪ ⏎ * ❨ "..edit_msg.." ❩ 💘\n*✘ ∫ ٍࢪسۧآئلڪ ⏎ * ❨ "..user_msgs.." ❩ 💘\n*✘ ∫ تفـآعــلڪ ⏎ * "..formsgs(msguser).." 💘\n*✘ ∫ نقآطڪ ⏎ * ❨ "..user_nkt.." ❩ 💘", 1, 'md')
+Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ مـعـٍࢪفڪ ⏎  ❨ "..username.." ❩ 💘\n✘ ∫ آيٰډيڪ ⏎  ❨ "..msg.sender_user_id_.." ❩ 💘\n✘ ∫ ٍࢪتبتڪ ⏎  "..IdRank(msg.sender_user_id_, msg.chat_id_).." 💘\n✘ ∫ ٍࢪسۧآئلڪ ⏎  ❨ "..user_msgs.." ❩ 💘\n✘ ∫ سحـڪآتڪ ⏎  ❨ "..edit_msg.." ❩ 💘\n✘ ∫ ٍࢪسۧآئلڪ ⏎  ❨ "..user_msgs.." ❩ 💘\n✘ ∫ تفـآعــلڪ ⏎  "..formsgs(msguser).." 💘\n✘ ∫ نقآطڪ ⏎  ❨ "..user_nkt.." ❩ 💘", 1, 'md')
 end
 else
 Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ عــــــــذرآ الايدي مـعـطل*', 1, 'md')
