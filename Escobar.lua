@@ -8692,7 +8692,7 @@ end
 end
 --     Source Escobar     --
 if text == "غنيلي" and ChCheck(msg) then
-data,res = https.request('https://apiabs.ml/Audios.php')
+data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
