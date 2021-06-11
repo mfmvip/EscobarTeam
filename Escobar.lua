@@ -3689,11 +3689,11 @@ if text == "رابط حذف" or text == "رابط الحذف" or text == "اري
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنـآ",url="https://my.telegram.org/auth"}}} SendInline(msg.chat_id_,'✘ ∫ اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(Devmfm:get(mustafa..'mfm:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ عدد جهاتك المضافه ⏎ *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = Devmfm:get(mustafa..'mfm:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ عدد تعديلاتك ⏎ *❨ "..edit_msg.." ❩* ", 1, 'md') end
-if text == "ايديي" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1,'✘ ∫ آيٰډيڪ ⏎ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
-if text == "رتبتي" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ ٍࢪتبتڪ ⏎ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'html') end
-if text == "ايدي المحموعة" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ ايدي آلَمـجـ̨مـۈعة ⏎ `"..msg.chat_id_.."`", 1, 'md') end
-if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then Devmfm:del(mustafa..'mfm:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ تــمِ حذف جميع تعديلاتك بنجاح' , 1, 'md') end
-if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then Devmfm:del(mustafa..'mfm:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ تــمِ حذف جميع جهاتك المضافه' , 1, 'md') end
+if text == "ايديي" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1,'*✘ ∫ آيٰډيڪ ⏎* ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
+if text == "رتبتي" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ ٍࢪتبتڪ ⏎* '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'html') end
+if text == "ايدي المحموعة" and ChCheck(msg) then Dev_mfm(msg.chat_id_, msg.id_, 1, "*✘ ∫ ايدي آلَمـجـ̨مـۈعة ⏎* `"..msg.chat_id_.."`", 1, 'md') end
+if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then Devmfm:del(mustafa..'mfm:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ تــمِ حذف جميع تعديلاتك بنجاح*' , 1, 'md') end
+if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then Devmfm:del(mustafa..'mfm:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_mfm(msg.chat_id_, msg.id_, 1, '*✘ ∫ تــمِ حذف جميع جهاتك المضافه*' , 1, 'md') end
 if text == 'المطور' or text == 'مطور' then
 local DevCh1 = Devmfm:get(mustafa.."Devmfm3")
 local DevText = Devmfm:get(mustafa.."DevText")
