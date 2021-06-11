@@ -7754,6 +7754,57 @@ t = Brg.ok.mfm
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
+if text == "تعطيل الافلام" and Constructor(msg) and ChCheck(msg) then
+local mustafaTeam = '⌁︙اهلا عزيزي ↫ '..mfmRank(msg)..' \n⌁︙تم تعطيل الافلام بنجاح'
+mfmmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, mustafaTeam, 14, string.len(msg.sender_user_id_))
+Devmfm:set(mustafa..'mfm:movie_bot'..msg.chat_id_,true)  
+end
+if text == "تفعيل الافلام" and Constructor(msg) and ChCheck(msg) then
+local mustafaTeam = '⌁︙اهلا عزيزي ↫ '..mfmRank(msg)..' \n⌁︙تم تفعيل الافلام بنجاح'
+mfmmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, mustafaTeam, 14, string.len(msg.sender_user_id_))
+Devmfm:del(mustafa..'mfm:movie_bot'..msg.chat_id_)  
+end
+if not Devmfm:get(mustafa..'mfm:movie_bot'..msg.chat_id_) then
+if text and text:match("^فلم (.*)$") and Devmfm:get(mustafa.."mfm:movie_bot"..msg.chat_id_) then
+local Textm = text:match("^فلم (.*)$")
+Urlm = https.request('https://black-source.tk/BlackTeAM/movie.php?serch='..URL.escape(Textm)) 
+if res == 200 then
+getmo = json:decode(data)
+if getmo.Info == true then
+local Text ='قصه الفلم'..getmo.info
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'مشاهده الفلم بجوده 240',url=getmo.sd}},
+{{text = 'مشاهده الفلم بجوده 480', url=getmo.Web},{text = 'مشاهده الفلم بجوده 1080', url=getmo.hd}},
+}
+end
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
+end
+--     Source mustafa     --
+if text == "تفعيل الانستا" and Constructor(msg) then
+local mustafaTeam = '⌁︙اهلا عزيزي ↫ '..mfmRank(msg)..' \n⌁︙تم تفعيل الانستا بنجاح'
+mfmmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, mustafaTeam, 14, string.len(msg.sender_user_id_))
+Devmfm:del(mustafa..'mfm:insta_bot'..msg.chat_id_)  
+end
+if text == "تعطيل الانستا" and Constructor(msg) then
+local mustafaTeam = '⌁︙اهلا عزيزي ↫ '..mfmRank(msg)..' \n⌁︙تم تعطيل الانستا بنجاح'
+mfmmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, mustafaTeam, 14, string.len(msg.sender_user_id_))
+Devmfm:set(mustafa..'mfm:insta_bot'..msg.chat_id_,true)
+end
+if text and text:match("^معلومات (.*)$") and Devmfm:get(mustafa.."mfm:insta_bot"..msg.chat_id_) then
+local Textni = text:match("^معلومات (.*)$")
+data,res = https.request('https://black-source.tk/BlackTeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
+if res == 200 then
+muaed = json:decode(data)
+if muaed.Info == true then
+local msg_id = msg.id_/2097152/0.5
+SendP(msg.chat_id_, msg_id,muaed.ph, muaed.info) 
+end
+end
+end
 if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
 local mustafaTEAM = '✘ ∫ آهـلُِآ عٍزْيـــــــّــزْي ⏎ '..mfmRank(msg)..' \n✘ ∫ تــمِ تفعيل اوامر النسب'
 mfmmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, mustafaTEAM, 14, string.len(msg.sender_user_id_))
@@ -7881,7 +7932,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Mean:mfm'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiabs.ml/Mean.php?Abs='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
 t = Mean.ok.mfm
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
