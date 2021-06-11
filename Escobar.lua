@@ -2699,7 +2699,7 @@ end
 if text == "الرابط" then
 if not Devmfm:get(mustafa.."mfm:Lock:GpLinks"..msg.chat_id_) then 
 if Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_) then
-Dev_mfm(msg.chat_id_, msg.id_, 1, "*✘ ∫ 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 ↬ ⥡ \n┉┉┉┉ EB ┉┉┉┉\n*"..Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_mfm(msg.chat_id_, msg.id_, 1, "✘ ∫ 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆  ⤷ ⥡ \n┉┉┉┉ EB ┉┉┉┉\n"..Devmfm:get(mustafa.."mfm:Groups:Links"..msg.chat_id_), 1, "html")
 else 
 Dev_mfm(msg.chat_id_, msg.id_, 1, '✘ ∫ لايوجد رابط آٍࢪسۧل ⏎ ضع رابط او آٍࢪسۧل ⏎ انشاء رابط للانشاء', 1, 'md')
 end
